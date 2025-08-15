@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: java-container
-          image: alaamohamed1/java_app:11
+          image: alaamohamed1/java_app:12
           ports:
             - containerPort: 8090
 
