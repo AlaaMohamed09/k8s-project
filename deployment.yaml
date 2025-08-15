@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: node-app
+        app: java-app
     spec:
       containers:
         - name: java-container
