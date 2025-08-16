@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: java-service
 spec:
-  type: NodePort
   selector:
-    app: java-app   # must match the pod label in the deployment
+    app: java
   ports:
     - protocol: TCP
-      port: 8090       # Service port
-      targetPort: 8090 # Container port in the pod
-      nodePort: 30080  # Optional: choose NodePort in range 30000–32767
+      port: 8090
+      targetPort: 8090
+  type: NodePort
